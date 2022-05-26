@@ -1,3 +1,6 @@
+/home/noyon_admin/Personal/Java/Spring-related/spring-security/spring-security-demo/src/main/java/com/springsecurity/demo/controller/LoginController.java
 /home/noyon_admin/Personal/Java/Spring-related/spring-security/spring-security-demo/src/main/java/com/springsecurity/demo/config/DemoAppConfig.java
 /home/noyon_admin/Personal/Java/Spring-related/spring-security/spring-security-demo/src/main/java/com/springsecurity/demo/controller/DemoController.java
+/home/noyon_admin/Personal/Java/Spring-related/spring-security/spring-security-demo/src/main/java/com/springsecurity/demo/config/DemoSecurityConfig.java
+/home/noyon_admin/Personal/Java/Spring-related/spring-security/spring-security-demo/src/main/java/com/springsecurity/demo/config/SecurityWebApplicationInitializer.java
 /home/noyon_admin/Personal/Java/Spring-related/spring-security/spring-security-demo/src/main/java/com/springsecurity/demo/config/MySpringMvcDispatcherServletInitializer.java

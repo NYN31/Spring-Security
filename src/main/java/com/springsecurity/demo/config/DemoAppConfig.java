@@ -12,20 +12,26 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @ComponentScan(basePackages="com.springsecurity.demo")
 public class DemoAppConfig {
 
-    // define a bean for ViewResolver
-    /***
-     The ViewResolver provides a mapping between view names and actual views. The View interface
-     addresses the preparation of the request and hands the request over to one of the view
-     technologies.
-     ***/
-    @Bean
-    public ViewResolver viewResolver() {
+	// define a bean for ViewResolver
 
-        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-
-        viewResolver.setPrefix("/WEB-INF/view/");
-        viewResolver.setSuffix(".jsp");
-
-        return viewResolver;
-    }
+	@Bean
+	public ViewResolver viewResolver() {
+		
+		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+		
+		viewResolver.setPrefix("/WEB-INF/view/");
+		viewResolver.setSuffix(".jsp");
+		
+		return viewResolver;
+	}
+	
 }
+
+
+
+
+
+
+
+
+

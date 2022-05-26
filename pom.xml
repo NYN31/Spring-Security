@@ -11,7 +11,7 @@
 
 	<properties>
 		<springframework.version>5.0.2.RELEASE</springframework.version>
-		<springsecurity.version>5.0.17.RELEASE</springsecurity.version>
+		<springsecurity.version>5.0.0.RELEASE</springsecurity.version>
 
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -77,16 +77,4 @@
 
 	<!-- TO DO: Add support for Maven WAR Plugin -->
 
-<!--	<build>-->
-<!--		<finalName>spring-security-demo</finalName>-->
-<!--		<pluginManagement>-->
-<!--			<plugins>-->
-<!--				<plugin>-->
-<!--					<groupId>org.apache.maven.plugins</groupId>-->
-<!--					<artifactId>maven-war-plugin</artifactId>-->
-<!--					<version>3.2.1</version>-->
-<!--				</plugin>-->
-<!--			</plugins>-->
-<!--		</pluginManagement>-->
-<!--	</build>-->
 </project>
