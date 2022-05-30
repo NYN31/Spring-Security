@@ -18,6 +18,11 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
 		// add our users for in memory authentication
+		/***
+		 in-memory authentication is the way for handling authentication in Spring Security.
+		 In the in-memory authentication we hardcore all the user details such as roles, passwords,
+		 and the user name. We can perform validation until the Spring server is running.
+		 ***/
 		
 		UserBuilder users = User.withDefaultPasswordEncoder();
 		
@@ -35,7 +40,9 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 			.formLogin()
 				.loginPage("/showMyLoginPage")
 				.loginProcessingUrl("/authenticateTheUser")
-				.permitAll();
+				.permitAll()
+			.and()
+				.logout().permitAll();
 		
 	}
 		
