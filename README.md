@@ -55,13 +55,11 @@ Added plain-login JSP page.
 # Lesson 5: CSRF token
 <body>
 	Manually added CSRF token
-	<p>
-		<b>CSRF: </b> A security attack where an evil website tricks you into executing an action on a web application that you are currently logged in.
-		The Spring security filter generates the CSRF token and send back to web browser and can use in HTML form and send the data over accordingly and ten spring security filters will verify the tokens.
-		<code>
-			<input type="hidden"
+	<p><b>CSRF: </b> A security attack where an evil website tricks you into executing an action on a web application that you are currently logged in.</p>
+	<p>The Spring security filter generates the CSRF token and send back to web browser and can use in HTML form and send the data over accordingly and ten spring security filters will verify the tokens.</p>
+	<form>
+		input type="hidden"
 					name="${_csrf.parameterName}"
-					value="${_csrf.token}" />
-		</code>
-	</p>
+					value="${_csrf.token}"
+	</form>
 </body>
