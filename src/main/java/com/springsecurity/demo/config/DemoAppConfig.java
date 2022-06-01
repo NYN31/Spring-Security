@@ -12,7 +12,17 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @ComponentScan(basePackages="com.springsecurity.demo")
 public class DemoAppConfig {
 
-	// define a bean for ViewResolver
+	/**
+	 * @ComponentScan support for component scanning which is written in XML as
+	 * <context:component-scan base-package="com.springsecurity.demo" />
+	 *
+	 * @EnabledWebMvc provides similar support to <mvc:annotation-driven /> in XML which
+	 * adds conversion, formatting and validation support, and it can handle processing of
+	 * controller classes, @RequestMapping methods and so on.
+	 *
+	 * Then there has to implement viewResolver function for view JSP page
+	 * @return
+	 */
 
 	@Bean
 	public ViewResolver viewResolver() {
