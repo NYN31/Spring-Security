@@ -63,3 +63,9 @@ Added plain-login JSP page.
 					value="${_csrf.token}"
 	</form>
 </body>
+
+
+# Lesson 6: Displaying UserName and UserRoles
+<body>
+	<p>Just added a maven dependency for spring security taglibs and updated home.jsp page for viewing username and role</p>
+</body>
