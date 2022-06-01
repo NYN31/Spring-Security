@@ -37,10 +37,9 @@ Added plain-login JSP page.
 # Lesson 3/4: Add bootstrap and logout feature
 
 <body>
-	fancy-login page added which is implement wit bootstrap. And login logout functionalities added.
-	<code>
-
-		http.authorizeRequests().anyRequest().authenticated()
+	fancy-login page added which is implement with bootstrap. And login logout functionalities added.
+		
+	http.authorizeRequests().anyRequest().authenticated()
 			.and()
 			.formLogin()
 				.loginPage("/showMyLoginPage")
@@ -48,7 +47,7 @@ Added plain-login JSP page.
 				.permitAll()
 			.and()
 				.logout().permitAll();
-	</code>
+	
 	
 </body>
 
@@ -57,15 +56,25 @@ Added plain-login JSP page.
 	Manually added CSRF token
 	<p><b>CSRF: </b> A security attack where an evil website tricks you into executing an action on a web application that you are currently logged in.</p>
 	<p>The Spring security filter generates the CSRF token and send back to web browser and can use in HTML form and send the data over accordingly and ten spring security filters will verify the tokens.</p>
-	<form>
+
 		input type="hidden"
 					name="${_csrf.parameterName}"
 					value="${_csrf.token}"
-	</form>
 </body>
 
 
 # Lesson 6: Displaying UserName and UserRoles
 <body>
 	<p>Just added a maven dependency for spring security taglibs and updated home.jsp page for viewing username and role</p>
+</body>
+
+# Lesson 7: Restrict Access Based On Role
+<body>
+	<p>Few things added in this section which is listed below: </p>
+	<ul>
+		<li>configure file changes with two attributes. One is antMatcher("/pageUrl).hasRole("roleName), another is  exceptionHandling.accessDeniedPage("/pageUrl")</li>
+		<li>Mapping function added in controller for each view</li>
+		<li>Restricted user to see the link/unnecessary staff which has no access to logged in user</li>
+		<li>Added custom access-denied page for better view & journey</li>
+</ul>
 </body>

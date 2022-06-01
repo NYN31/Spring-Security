@@ -1,5 +1,6 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+<%@ taglib prefix="section" uri="http://www.springframework.org/security/tags" %>
 
 <html>
 <head>
@@ -17,6 +18,25 @@
         <br><br>
         Role(s): <security:authentication property="principal.authorities" />
     </p>
+
+    <security:authorize access="hasRole('MANAGER')">
+        <!-- Add a link to point to /leaders ... this is for managers -->
+
+        <p>
+            <a href="${pageContext.request.contextPath}/leaders">LeaderShip Meeting</a>
+            (Only for Manager peeps)
+        </p>
+    </security:authorize>
+
+    <section:authorize access="hasRole('ADMIN')">
+        <!-- Add a link to point to /systems ... this is for admins -->
+
+        <p>
+            <a href="${pageContext.request.contextPath}/systems">IT Systems Meeting</a>
+            (Only for Admin peeps)
+        </p>
+    </section:authorize>
+
     <!---- Add a logout button ---->
     <hr>
     <div pt="50px"></div>
