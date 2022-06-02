@@ -78,3 +78,14 @@ Added plain-login JSP page.
 		<li>Added custom access-denied page for better view & journey</li>
 </ul>
 </body>
+
+# Lesson 8: Added Data Source (JDBC)
+
+<body>
+	<ul>
+		<li>Added two maven dependencies</li>
+		<li>Added properties file</li>
+		<li>Data source implemented at <b>DemoAppConfig</b> Class</li>
+		<li>Connected data source</li>
+	</ul>
+</body>
