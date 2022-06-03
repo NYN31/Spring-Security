@@ -1,6 +1,8 @@
 # Spring-Security
 Technologies used: Spring MVC, Spring Security, In-memory Authentication, CSRF, JDBC
 
+# Pull master branch
+
 # Lesson 1: Getting started with Spring MVC and Spring Security
 <body>
 Here first created a class file whose name is <b>DemoAppConfig</b> and home.jsp file for view. In this class there are few annotations. Described those below:
